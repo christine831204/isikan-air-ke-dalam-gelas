@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.water-container {
+    width: 100px;
+    height: 300px;
+    background-color: lightblue;
+    position: relative;
+    border: 2px solid black;
+}
+
+.water-level {
+    width: 100px;
+    height: 300px; /* 容器A装满 */
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+}
+
+.cup {
+    width: 100px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+}
+
+.water {
+    width: 100px;
+    height: 0; /* 初始水量为0 */
+    background-color: lightblue;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.3s ease;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
